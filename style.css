@@ -1,0 +1,82 @@
+:root {
+  --border: 20px;
+  --borderImage: 10px;
+  --borderStatus: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: hsl(47, 89%, 63%);
+  display: flex;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: var(--border);
+  border: 1px solid black;
+  box-shadow: 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  max-width: 87.2vw;
+  width: 384px;
+}
+
+.card-background-image {
+  background-image: url('./assets/images/illustration-article.svg');
+  border-radius: var(--borderImage);
+  height: 200px;
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-content-status {
+  background-color: hsl(44, 92%, 65%);
+  display: flex;
+  width: max-content;
+  padding: 4px 12px;
+  border-radius: var(--borderStatus);
+  font-weight: bolder;
+}
+
+.card-content-title {
+  font-size: 24px;
+}
+
+.card-content-description {
+  color: hsl(0, 0%, 42%);
+  font-size: 16px;
+}
+
+.card-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-user-img {
+  height: 32px;
+  width: 32px;
+}
+
+.card-user-name {
+  font-weight: bolder;
+}
